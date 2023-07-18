@@ -1,0 +1,60 @@
+
+
+
+
+.memory-game {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+  
+   
+    
+}
+.memory-board {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10.5%, 1fr));
+    grid-gap: 4% 2%;
+}
+
+
+.memory-card-item {
+    width: 100%;
+    height: 100%;
+    perspective: 1000px; 
+    background-color: transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.memory-card-item-inner {
+    width: 100%;
+    padding-top: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+    transition: transform 0.25s;
+    transform-style: preserve-3d;
+}
+
+
+.memory-card-item-back {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.memory-card-item img {
+    height: 100%;
+}
+
+

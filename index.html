@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="memory-game" />
+    <link rel="stylesheet" type="text/css" media="all" href="./css/memory.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="./css/memory-game.css" />
+   
+</head>
+<body>
+    <div class="page page-memory-game">
+        <div class="memory-game" id="memoryGame">
+        <div class="memory-board"></div>          
+        </div>
+        <script src="js/memory-game.js"></script>
+        <script type="module">
+            import MemoryCards from './js/memory-cards.js';
+            let memoryGame = new MemoryGame({
+                selector: document.getElementById('memoryGame'),
+                cards: MemoryCards.getCards()
+            });
+        </script>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <div></div>
+    
 </body>
 </html>
