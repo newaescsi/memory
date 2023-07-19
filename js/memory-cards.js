@@ -1,7 +1,7 @@
 
 
 const imageDirectory = '/img/movies/';
-const numberOfImages = 16;
+const numberOfImages = 32;
 
 function getCards(){
     const cards = [];
